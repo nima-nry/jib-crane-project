@@ -1,65 +1,168 @@
-# Telescopic Jib Crane for a 3-Ton Forklift
+# Telescopic Jib Crane Design for Forklift
 
-A SolidWorks design study for a bolt-on telescopic jib crane attachment. The concept targets a **1.5-ton design load**, adjustable reach and a practical welded-steel construction for a 3-ton forklift.
+<p align="center">
+<img src="images/Hero.JPG" width="850">
+</p>
 
-> This is an engineering design study. The FEA values below depend on the stated assumptions and are not a certification for lifting operation.
+## Overview
 
-![Assembly overview](images/Hero.JPG)
+This project focuses on the mechanical design and structural development of a telescopic jib crane attachment for a 3-ton forklift.
 
-## Design brief
+The objective was to develop a compact, manufacturable lifting attachment capable of handling a 1.5-ton load while maintaining structural safety, adjustable reach, and practical manufacturing requirements.
+
+---
+
+## Design Requirements
 
 - Forklift-mounted lifting attachment
-- 1.5-ton design load
-- Telescopic boom with 100 mm extension steps
-- Adjustable tilt from 0° to 45°
-- Maximum modeled reach: 2.5 m
+- Maximum lifting capacity: 1.5 tons
+- Adjustable telescopic boom
+- Adjustable tilt angle
 - Bolt-on mounting structure
+- Manufacturing-oriented design
+
+---
+
+## Design Process
+
+The design was developed through the following engineering workflow:
+
+1. Requirement definition and load estimation
+2. Mechanical concept development
+3. 3D CAD modeling and assembly design
+4. Structural verification using FEA
+5. Manufacturing and assembly considerations
+
+---
+
+## Key Specifications
+
+| Parameter | Value |
+|---|---|
+| Forklift Capacity | 3 tons |
+| Designed Load Capacity | 1.5 tons |
+| Maximum Reach | 2.5 m |
+| Safety Factor | ≈6 |
+| Extension Step | 100 mm |
+| Tilt Adjustment | 0°–45° |
+| Material | ST52 Structural Steel (Assumed) |
+
+---
+
+## CAD Development
+
+The complete assembly was designed using **SolidWorks 2024**.
+
+The model includes:
+
+- Telescopic boom mechanism
+- Fork mounting structure
+- Pivot mechanism
+- Reinforcement plates
+- Bolted connections
+
+<p align="center">
+<img src="images/Detail.JPG" width="850">
+</p>
+
+---
+
+# Structural Simulation
+
+Static structural analysis was performed using **SolidWorks Simulation** to evaluate the mechanical performance of the structure under loading conditions.
+
+## Simulation Setup
+
+The analysis was performed based on the following assumptions:
+
+- Fixed support applied at the forklift fork mounting region
+- Vertical lifting load applied at the boom tip
+- Linear elastic material behavior
+- ST52 structural steel material properties
+
+---
+
+## Stress Analysis
+
+Von Mises stress distribution was evaluated to verify structural strength.
+
+<p align="center">
+<img src="images/Stress.png" width="850">
+</p>
+
+Maximum von Mises stress:
+
+```
+58.75 MPa
+```
+
+Based on the assumed yield strength of ST52 structural steel:
+
+```
+Safety Factor ≈ 6
+```
+
+The obtained stress level indicates acceptable structural performance under the considered loading condition.
+
+---
+
+## Displacement Analysis
+
+Maximum deformation was evaluated to assess the structural rigidity.
+
+<p align="center">
+<img src="images/displacement.png" width="850">
+</p>
+
+Maximum displacement:
+
+```
+9.97 mm
+```
+
+The deformation results were used to evaluate stiffness and serviceability of the structure under the applied loading condition.
+
+---
+
+# Manufacturing Considerations
+
+The design was developed considering practical manufacturing constraints:
+
+- Welded steel structure
+- Standard fasteners
+- Machinable components
+- Assembly and maintenance accessibility
 - Manufacturing-oriented geometry
 
-## Workflow
+---
 
-1. Translate the lifting, reach and mounting requirements into a mechanical concept.
-2. Build the complete assembly and parts in SolidWorks 2024.
-3. Produce engineering drawings and review the assembly for fabrication and maintenance.
-4. Run a static structural study in SolidWorks Simulation.
-5. Review stress, displacement and the practical load path.
+# Project Files
 
-## CAD assembly
+Available project files include:
 
-The assembly includes the telescopic boom, fork mounting structure, pivot mechanism, reinforcement plates and bolted connections.
+- SolidWorks assembly and part files
+- Engineering drawings
+- Structural simulation results
+- Rendered visualization images
 
-![Detail view](images/Detail.JPG)
+---
 
-## Structural study
+# Software & Tools
 
-The study uses the following idealized assumptions:
+- SolidWorks 2024
+- SolidWorks Simulation
+- Mechanical Design
+- CAD Modeling
+- Structural Analysis
+- Finite Element Analysis (FEA)
 
-- Fixed support at the forklift fork-mounting region
-- Vertical lifting load at the boom tip
-- Linear-elastic material behavior
-- Assumed ST52 structural steel properties
+---
 
-### Stress
+# Project Skills Demonstrated
 
-The reported maximum von Mises stress is **58.75 MPa**. Under the assumed ST52 material model, this corresponds to an approximate safety factor of **6**.
-
-![Stress result](images/Stress.png)
-
-### Displacement
-
-The reported maximum displacement is **9.97 mm** under the considered loading condition.
-
-![Displacement result](images/displacement.png)
-
-## Repository structure
-
-- `SOLIDWORKS/` — parts and assemblies
-- `Drawing/` — engineering drawings
-- `Simulation/` — simulation screenshots and animation
-- `renders/` — rendered views
-- `video/` — assembly and mechanism animations
-- `images/` — README figures
-
-## Tools
-
-SolidWorks 2024 · SolidWorks Simulation · CAD assembly · Mechanical design · FEA · Engineering documentation
+- Mechanical System Design
+- 3D CAD Assembly
+- Structural Design
+- Finite Element Analysis
+- Manufacturing-Oriented Engineering
+- Engineering Documentation
